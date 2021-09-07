@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, ImageBackground } from "react-native";
 import styles from "./style";
+import Cbutton from "../CButton";
 
 const CarItem = (props) => {
   return (
@@ -14,6 +15,12 @@ const CarItem = (props) => {
 
         <Text style={styles.subTitle}>{"this is the latest modal"}</Text>
       </View>
+      <Cbutton type={"primary"} content={"Custom order"} onPress={() => {}} />
+      <Cbutton
+        type={"secondary"}
+        content={"Existing inventory"}
+        onPress={() => {}}
+      />
     </View>
   );
 };
