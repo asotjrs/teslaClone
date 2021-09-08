@@ -15,12 +15,14 @@ const CarItem = (props) => {
 
         <Text style={styles.subTitle}>{"this is the latest modal"}</Text>
       </View>
-      <Cbutton type={"primary"} content={"Custom order"} onPress={() => {}} />
-      <Cbutton
-        type={"secondary"}
-        content={"Existing inventory"}
-        onPress={() => {}}
-      />
+      <View style={styles.buttonContainer}>
+        <Cbutton type={"primary"} content={"Custom order"} onPress={() => {}} />
+        <Cbutton
+          type={"secondary"}
+          content={"Existing inventory"}
+          onPress={() => {}}
+        />
+      </View>
     </View>
   );
 };
